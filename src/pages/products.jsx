@@ -1,5 +1,30 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import img1 from '../assets/Products/P1.jpeg'
+import img2 from '../assets/Products/P2.jpeg'
+import img3 from '../assets/Products/P3.jpeg'
+import img4 from '../assets/Products/P4.jpeg'
+import img5 from '../assets/Products/P5.jpeg'
+import img6 from '../assets/Products/P6.jpeg'
+import img7 from '../assets/Products/P7.jpeg'
+import img8 from '../assets/Products/P8.jpeg'
+import img9 from '../assets/Products/P9.jpeg'
+import img10 from '../assets/Products/P10.jpeg'
+import img11 from '../assets/Products/P11.jpeg'
+import img12 from '../assets/Products/P12.jpeg'
+import img13 from '../assets/Products/P13.jpeg'
+import img14 from '../assets/Products/P14.jpeg'
+import img15 from '../assets/Products/P15.jpeg'
+import img16 from '../assets/Products/P16.jpeg'
+import img17 from '../assets/Products/P17.jpeg'
+import img18 from '../assets/Products/Traingle-chalk-box-spruce.jpeg'
+import img19 from '../assets/Products/Traingle-pro-chalk-box-spruce.jpeg'
+import img20 from '../assets/Products/P20.jpeg'
+import img21 from '../assets/Products/P21.jpeg'
+import img22 from '../assets/Products/P22.jpeg'
+import img23 from '../assets/Products/P23.jpeg'
+
+
 
 export default function Products() {
     const navigate = useNavigate();
@@ -12,8 +37,9 @@ export default function Products() {
             id: 1,
             name: "Professional Snooker Cue",
             category: "Cues",
-            price: 12999,
-            image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            // price: 12999,
+            image:img1,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
             description: "Premium ash wood cue with leather grip",
             inStock: true
         },
@@ -21,8 +47,9 @@ export default function Products() {
             id: 2,
             name: "Cue Case - Deluxe",
             category: "Accessories",
-            price: 2499,
-            image: "https://images.unsplash.com/photo-1611329857570-f02f340e7378?w=500&h=500&fit=crop",
+            // price: 2499,
+            image:img2,
+            // image: "https://images.unsplash.com/photo-1611329857570-f02f340e7378?w=500&h=500&fit=crop",
             description: "Hard shell case for 2 cues",
             inStock: true
         },
@@ -30,8 +57,9 @@ export default function Products() {
             id: 3,
             name: "Premium Chalk Set",
             category: "Accessories",
-            price: 299,
-            image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=500&h=500&fit=crop",
+            // price: 299,
+            image:img3,
+            // image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=500&h=500&fit=crop",
             description: "Pack of 12 professional grade chalks",
             inStock: true
         },
@@ -39,8 +67,9 @@ export default function Products() {
             id: 4,
             name: "Club T-Shirt",
             category: "Apparel",
-            price: 899,
-            image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
+            // price: 899,
+            image:img4,
+            // image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
             description: "Official US&PA Club branded t-shirt",
             inStock: true
         },
@@ -48,8 +77,9 @@ export default function Products() {
             id: 5,
             name: "Cue Tip Shaper",
             category: "Accessories",
-            price: 599,
-            image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
+            // price: 599,
+            image:img5,
+            // image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
             description: "Professional tip shaper and scuffer",
             inStock: true
         },
@@ -57,17 +87,19 @@ export default function Products() {
             id: 6,
             name: "Training Cue Ball",
             category: "Accessories",
-            price: 1299,
-            image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            // price: 1299,
+            image:img6,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
             description: "Marked cue ball for spin training",
-            inStock: false
+            inStock: true
         },
         {
             id: 7,
             name: "Club Hoodie",
             category: "Apparel",
-            price: 1899,
-            image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
+            // price: 1899,
+            image:img7,
+            // image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
             description: "Premium cotton hoodie with club logo",
             inStock: true
         },
@@ -75,8 +107,9 @@ export default function Products() {
             id: 8,
             name: "Mini Pool Table",
             category: "Tables",
-            price: 45999,
-            image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            // price: 45999,
+            image:img8,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
             description: "6ft home practice table",
             inStock: true
         },
@@ -84,11 +117,162 @@ export default function Products() {
             id: 9,
             name: "Cue Extension",
             category: "Accessories",
-            price: 1499,
-            image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
+            // price: 1499,
+            image:img9,
+            // image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
             description: "Telescopic cue extension",
             inStock: true
-        }
+        },
+        {
+            id: 10,
+            name: "Professional Snooker Cue",
+            category: "Cues",
+            // price: 12999,
+            image:img10,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            description: "Premium ash wood cue with leather grip",
+            inStock: true
+        },
+        {
+            id: 11,
+            name: "Cue Case - Deluxe",
+            category: "Accessories",
+            // price: 2499,
+            image:img11,
+            // image: "https://images.unsplash.com/photo-1611329857570-f02f340e7378?w=500&h=500&fit=crop",
+            description: "Hard shell case for 2 cues",
+            inStock: true
+        },
+        {
+            id: 12,
+            name: "Premium Chalk Set",
+            category: "Accessories",
+            // price: 299,
+            image:img12,
+            // image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=500&h=500&fit=crop",
+            description: "Pack of 12 professional grade chalks",
+            inStock: true
+        },
+        {
+            id: 13,
+            name: "Club T-Shirt",
+            category: "Apparel",
+            // price: 899,
+            image:img13,
+            // image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
+            description: "Official US&PA Club branded t-shirt",
+            inStock: true
+        },
+        {
+            id: 14,
+            name: "Cue Tip Shaper",
+            category: "Accessories",
+            // price: 599,
+            image:img14,
+            // image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
+            description: "Professional tip shaper and scuffer",
+            inStock: true
+        },
+        {
+            id: 15,
+            name: "Training Cue Ball",
+            category: "Accessories",
+            // price: 1299,
+            image:img15,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            description: "Marked cue ball for spin training",
+            inStock: false
+        },
+        {
+            id: 16,
+            name: "Club Hoodie",
+            category: "Apparel",
+            // price: 1899,
+            image:img16,
+            // image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
+            description: "Premium cotton hoodie with club logo",
+            inStock: true
+        },
+        {
+            id: 17,
+            name: "Mini Pool Table",
+            category: "Tables",
+            // price: 45999,
+            image:img17,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            description: "6ft home practice table",
+            inStock: true
+        },
+        {
+            id: 18,
+            name: "Cue Extension",
+            category: "Accessories",
+            // price: 1499,
+            image:img18,
+            // image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
+            description: "Telescopic cue extension",
+            inStock: true
+        },
+        {
+            id: 19,
+            name: "Training Cue Ball",
+            category: "Accessories",
+            // price: 1299,
+            image:img19,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            description: "Marked cue ball for spin training",
+            inStock: false
+        },
+        {
+            id: 20,
+            name: "Club Hoodie",
+            category: "Apparel",
+            // price: 1899,
+            image:img20,
+            // image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
+            description: "Premium cotton hoodie with club logo",
+            inStock: true
+        },
+        {
+            id: 21,
+            name: "Mini Pool Table",
+            category: "Tables",
+            // price: 45999,
+            image:img21,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            description: "6ft home practice table",
+            inStock: true
+        },
+        {
+            id: 22,
+            name: "Training Cue Ball",
+            category: "Accessories",
+            // price: 1299,
+            image:img22,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            description: "Marked cue ball for spin training",
+            inStock: false
+        },
+        {
+            id: 23,
+            name: "Club Hoodie",
+            category: "Apparel",
+            // price: 1899,
+            image:img23,
+            // image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
+            description: "Premium cotton hoodie with club logo",
+            inStock: true
+        },
+        {
+            id: 24,
+            name: "Mini Pool Table",
+            category: "Tables",
+            // price: 45999,
+            image:img17,
+            // image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&h=500&fit=crop",
+            description: "6ft home practice table",
+            inStock: true
+        },
     ];
 
     const filteredProducts = selectedCategory === "All"
@@ -104,7 +288,7 @@ export default function Products() {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=2070')"
+                        backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuBcmNoJ-MwA51zssvqEBchGjxJXYiSP7t6-m8WXe1VyIhLMTnY9AIIHnL4Gxu3Ca39roIOhCh-p7T3OufLfZy1GJIhLETmqQIrvvPPaJBDhQVGlVuQo9HeLYR9XbQEAc49tgQoY4gWJg7iXbCa8j0V8-h78quBqNxxsc6H4RRa4vfQg6HNgLb2_gkAL5Ub4ul5r5bjgRh5aREEpOPt7ScIebU_rC03N57vGkcPtB6YGHuaT1fGwNNpxF3wZ3dHnt7jhk2vxfMRwkb')"
                     }}
                 >
                     <div className="absolute inset-0 bg-[#0f0f0f74] from-[#102216]/60 via-[#102216]/80 to-background-dark"></div>
@@ -126,26 +310,29 @@ export default function Products() {
             </section>
 
             {/* Category Filter */}
-            <section className="py-8 px-4 md:px-10 max-w-[1280px] mx-auto w-full border-b border-gray-200 dark:border-[#28392e]">
-                <div className="flex flex-wrap gap-3 justify-center">
-                    {categories.map((category) => (
-                        <button
-                            key={category}
-                            onClick={() => setSelectedCategory(category)}
-                            className={`px-6 py-2 rounded-lg font-bold text-sm transition-all ${selectedCategory === category
-                                ? "bg-yellow-400 text-[#102216] shadow-lg"
-                                : "bg-white dark:bg-[#152319] text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-[#28392e] hover:border-yellow-400"
-                                }`}
-                        >
-                            {category}
-                        </button>
-                    ))}
+            <section className="bg-black border-y border-[#28392e] py-6">
+                <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+                    <div className="flex flex-wrap gap-3 justify-center">
+                        {categories.map((category) => (
+                            <button
+                                key={category}
+                                onClick={() => setSelectedCategory(category)}
+                                className={`px-6 py-2 rounded-lg font-bold text-sm transition-all ${selectedCategory === category
+                                    ? "bg-yellow-400 text-[#102216] shadow-[0_0_20px_rgba(241,203,12,0.4)]"
+                                    : "bg-white/10 text-white hover:bg-white/20 border border-white/20"
+                                    }`}
+                            >
+                                {category}
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </section>
+            
 
             {/* Products Grid */}
             <section className="py-16 px-4 md:px-10 max-w-[1280px] mx-auto w-full">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {filteredProducts.map((product) => (
                         <div
                             key={product.id}
@@ -165,26 +352,27 @@ export default function Products() {
                                         </span>
                                     </div>
                                 )}
-                                <div className="absolute top-3 right-3 bg-yellow-400 text-[#102216] px-3 py-1 rounded-full text-xs font-bold">
+                                {/* <div className="absolute top-3 right-3 bg-yellow-400 text-[#102216] px-3 py-1 rounded-full text-xs font-bold">
                                     {product.category}
-                                </div>
+                                </div> */}
                             </div>
 
                             {/* Product Info */}
                             <div className="p-6 flex flex-col gap-3">
-                                <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                                <h3 className="text-[1.1rem] font-bold text-gray-900 dark:text-white">
                                     {product.name}
                                 </h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">
+                                <p className="text-[0.7rem] text-gray-600 dark:text-gray-400">
                                     {product.description}
                                 </p>
 
                                 <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-200 dark:border-[#28392e]">
-                                    <div className="flex flex-col">
+                                    {/* Price of Products */}
+                                    {/* <div className="flex flex-col">
                                         <span className="text-2xl font-black text-gray-900 dark:text-white">
                                             &#x20B9;{product.price.toLocaleString()}
                                         </span>
-                                    </div>
+                                    </div> */}
 
                                     <button
                                         onClick={() => navigate("/contact")}
@@ -215,7 +403,7 @@ export default function Products() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 px-4 md:px-10 bg-gradient-to-br ">
+            <section className="py-16 px-4 md:px-10 bg-gradient-to-br bg-gray-100">
                 <div className="max-w-[1280px] mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-black text-[#102216] mb-4">
                         Need Help Choosing?
@@ -225,7 +413,7 @@ export default function Products() {
                     </p>
                     <button
                         onClick={() => navigate("/contact")}
-                        className="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-yellow-500 text-black font-bold hover:bg-black transition-all"
+                        className="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-yellow-500 text-black font-bold hover:bg-black hover:text-white transition-all"
                     >
                         Contact Us
                     </button>

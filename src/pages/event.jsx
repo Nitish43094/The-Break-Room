@@ -4,30 +4,55 @@ import Calendar from '../components/Calendar'
 const Event = () => {
     const [selectedFilter, setSelectedFilter] = useState("all");
     const [searchQuery, setSearchQuery] = useState("");
-    // Countdown timer state
+
     const [timeLeft, setTimeLeft] = useState({
-        days: 12,
-        hours: 4,
-        minutes: 30
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
     });
 
-    // Simulate countdown (you can replace with actual countdown logic)
     useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft(prev => {
-                if (prev.minutes > 0) {
-                    return { ...prev, minutes: prev.minutes - 1 };
-                } else if (prev.hours > 0) {
-                    return { ...prev, hours: prev.hours - 1, minutes: 59 };
-                } else if (prev.days > 0) {
-                    return { ...prev, days: prev.days - 1, hours: 23, minutes: 59 };
-                }
-                return prev;
+        const getTargetTime = () => {
+            const saved = localStorage.getItem("countdownTarget");
+            if (saved) return Number(saved);
+
+            // Example duration: 12d 4h 30m
+            const duration =
+                (12 * 24 * 60 * 60 +
+                    4 * 60 * 60 +
+                    30 * 60) * 1000;
+
+            const target = Date.now() + duration;
+            localStorage.setItem("countdownTarget", target);
+            return target;
+        };
+
+        const targetTime = getTargetTime();
+
+        const updateTimer = () => {
+            const diff = targetTime - Date.now();
+
+            if (diff <= 0) {
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                localStorage.removeItem("countdownTarget");
+                return;
+            }
+
+            setTimeLeft({
+                days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((diff / (1000 * 60)) % 60),
+                seconds: Math.floor((diff / 1000) % 60),
             });
-        }, 60000); // Update every minute
+        };
+
+        updateTimer();
+        const timer = setInterval(updateTimer, 1000); // every second
 
         return () => clearInterval(timer);
     }, []);
+
 
     const filters = [
         { id: "all", label: "All Events" },

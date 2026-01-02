@@ -2,29 +2,29 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Book = () => {
-    const [selectedDate, setSelectedDate] = useState("2023-10-24");
-    const [duration, setDuration] = useState("2");
-    const [selectedTime, setSelectedTime] = useState("17:00");
-    const [selectedTable, setSelectedTable] = useState(3);
+    // const [selectedDate, setSelectedDate] = useState("2023-10-24");
+    // const [duration, setDuration] = useState("2");
+    // const [selectedTime, setSelectedTime] = useState("17:00");
+    // const [selectedTable, setSelectedTable] = useState(3);
 
-    const timeSlots = [
-        { time: "16:00", available: false },
-        { time: "17:00", available: true },
-        { time: "18:00", available: true },
-        { time: "19:00", available: false },
-        { time: "20:00", available: true },
-        { time: "21:00", available: true },
-        { time: "22:00", available: true },
-        { time: "23:00", available: true },
-    ];
+    // const timeSlots = [
+    //     { time: "16:00", available: false },
+    //     { time: "17:00", available: true },
+    //     { time: "18:00", available: true },
+    //     { time: "19:00", available: false },
+    //     { time: "20:00", available: true },
+    //     { time: "21:00", available: true },
+    //     { time: "22:00", available: true },
+    //     { time: "23:00", available: true },
+    // ];
 
-    const tables = [
-        { id: 1, name: "Table 1", available: false, type: "standard" },
-        { id: 2, name: "Table 2", available: true, type: "standard" },
-        { id: 3, name: "Table 3", available: true, type: "standard" },
-        { id: 4, name: "Table 4", available: true, type: "standard" },
-        { id: 5, name: "The Arena (Match Table)", available: true, type: "vip" },
-    ];
+    // const tables = [
+    //     { id: 1, name: "Table 1", available: false, type: "standard" },
+    //     { id: 2, name: "Table 2", available: true, type: "standard" },
+    //     { id: 3, name: "Table 3", available: true, type: "standard" },
+    //     { id: 4, name: "Table 4", available: true, type: "standard" },
+    //     { id: 5, name: "The Arena (Match Table)", available: true, type: "vip" },
+    // ];
 
     return (
         <div className="flex flex-col min-h-screen bg-background-light dark:bg-background-dark font-display text-[#111813] dark:text-white antialiased overflow-x-hidden">

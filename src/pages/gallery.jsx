@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import img1 from '../assets/galleryImg1.jpeg'
+import img2 from '../assets/galleryImg2.jpeg'
+import img3 from '../assets/galleryImg3.jpeg'
+import img4 from '../assets/galleryImg4.jpeg'
+import img5 from '../assets/galleryImg5.jpeg'
+import img6 from '../assets/galleryImg6.jpeg'
+import img7 from '../assets/galleryImg7.jpeg'
+import img8 from '../assets/Table.jpeg'
+// import img9 from '../assets/galleryImg4.jpeg'
 export default function Gallery() {
     const navigate = useNavigate()
     const [selectedImage, setSelectedImage] = useState(null);
@@ -9,13 +17,15 @@ export default function Gallery() {
     const galleryImages = [
         {
             id: 1,
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSIqL5ukWBfO6oIy1XQU4hIsPgIoxASvwInxseMnhOR4l_AvrgZ7g8o7Eqj9tdRQ-qU9EwG8RhTZVOVF_om7zM3_aUy01JTTftwH6yml3-kpJ7WLB1yzkopTiK6HJGQ_VzyREnycuYyoCtb88kx78-pMeBWTVl_Dm70VwHbS32HPe06tVlMaX586sm6S2DrYgnQJyN4TEP07kfcbZZvCeTU5KIZARoUoIbUqJu8QZ1mIp3jVuhFQQcLU1Fauzs-ns3sZmNmwA2i8OD",
+            src: img8,
+            // src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSIqL5ukWBfO6oIy1XQU4hIsPgIoxASvwInxseMnhOR4l_AvrgZ7g8o7Eqj9tdRQ-qU9EwG8RhTZVOVF_om7zM3_aUy01JTTftwH6yml3-kpJ7WLB1yzkopTiK6HJGQ_VzyREnycuYyoCtb88kx78-pMeBWTVl_Dm70VwHbS32HPe06tVlMaX586sm6S2DrYgnQJyN4TEP07kfcbZZvCeTU5KIZARoUoIbUqJu8QZ1mIp3jVuhFQQcLU1Fauzs-ns3sZmNmwA2i8OD",
             title: "Professional Table",
             category: "Tables"
         },
         {
             id: 2,
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBi5XFHMLpFKeecUw2kFZP1U7lM5KbflmO17Nm-6aMxFrOpa47JXpBtNtyUWG-8_xrXJMy8AeU4n-Ogrfl1iNRSSaYBQsFrVrGE08C61SUWgfL8MXAxOS1utWRhGHOTZfRuwJxRxKMT4KJuI6W5CEmR0B0B_mcGczAGMHCCM9EgR5mgDKrjLD59IiFxKmMZFl00GM9GqS703EA0hPSLK1TAgx81sv43RHUPgYvnA2d0WnJvtioX-M90SOvVQrp_20PfYnN8YocwiDfZ",
+            src:img5,
+            // src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBi5XFHMLpFKeecUw2kFZP1U7lM5KbflmO17Nm-6aMxFrOpa47JXpBtNtyUWG-8_xrXJMy8AeU4n-Ogrfl1iNRSSaYBQsFrVrGE08C61SUWgfL8MXAxOS1utWRhGHOTZfRuwJxRxKMT4KJuI6W5CEmR0B0B_mcGczAGMHCCM9EgR5mgDKrjLD59IiFxKmMZFl00GM9GqS703EA0hPSLK1TAgx81sv43RHUPgYvnA2d0WnJvtioX-M90SOvVQrp_20PfYnN8YocwiDfZ",
             title: "Chalking the Cue",
             category: "Equipment"
         },
@@ -27,37 +37,43 @@ export default function Gallery() {
         },
         {
             id: 4,
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBniC9RyfauBn1ofO2m3nI40zrbMCvNKjeNCUjCrkK7mzhqFgJYj_xGd32U42xSyt0R_KWXo_pJ6wiq_vmOtYSoTXlQEpXUtsyEgOLv5_yBJqH0w53A7eAToeOBDUqmy9p9IKS20gYS2eWma6I5KxmY94KWPdiL-jwsg-8VpwOd18evolXPu-msSGY5coZGBKjw3xjIlqWAK7w9H3VKQxT2lOCZ78RwCUZTKUU9UcQrQSXIw3rBlF5SxsjvHOIHQJGHAvwGmpqUz4Mm",
+            src:img4,
+            // src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBniC9RyfauBn1ofO2m3nI40zrbMCvNKjeNCUjCrkK7mzhqFgJYj_xGd32U42xSyt0R_KWXo_pJ6wiq_vmOtYSoTXlQEpXUtsyEgOLv5_yBJqH0w53A7eAToeOBDUqmy9p9IKS20gYS2eWma6I5KxmY94KWPdiL-jwsg-8VpwOd18evolXPu-msSGY5coZGBKjw3xjIlqWAK7w9H3VKQxT2lOCZ78RwCUZTKUU9UcQrQSXIw3rBlF5SxsjvHOIHQJGHAvwGmpqUz4Mm",
             title: "Tournament Ready",
             category: "Events"
         },
         {
             id: 5,
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSIqL5ukWBfO6oIy1XQU4hIsPgIoxASvwInxseMnhOR4l_AvrgZ7g8o7Eqj9tdRQ-qU9EwG8RhTZVOVF_om7zM3_aUy01JTTftwH6yml3-kpJ7WLB1yzkopTiK6HJGQ_VzyREnycuYyoCtb88kx78-pMeBWTVl_Dm70VwHbS32HPe06tVlMaX586sm6S2DrYgnQJyN4TEP07kfcbZZvCeTU5KIZARoUoIbUqJu8QZ1mIp3jVuhFQQcLU1Fauzs-ns3sZmNmwA2i8OD",
+            src:img2,
+            // src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSIqL5ukWBfO6oIy1XQU4hIsPgIoxASvwInxseMnhOR4l_AvrgZ7g8o7Eqj9tdRQ-qU9EwG8RhTZVOVF_om7zM3_aUy01JTTftwH6yml3-kpJ7WLB1yzkopTiK6HJGQ_VzyREnycuYyoCtb88kx78-pMeBWTVl_Dm70VwHbS32HPe06tVlMaX586sm6S2DrYgnQJyN4TEP07kfcbZZvCeTU5KIZARoUoIbUqJu8QZ1mIp3jVuhFQQcLU1Fauzs-ns3sZmNmwA2i8OD",
             title: "Perfect Shot",
             category: "Action"
         },
         {
             id: 6,
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBi5XFHMLpFKeecUw2kFZP1U7lM5KbflmO17Nm-6aMxFrOpa47JXpBtNtyUWG-8_xrXJMy8AeU4n-Ogrfl1iNRSSaYBQsFrVrGE08C61SUWgfL8MXAxOS1utWRhGHOTZfRuwJxRxKMT4KJuI6W5CEmR0B0B_mcGczAGMHCCM9EgR5mgDKrjLD59IiFxKmMZFl00GM9GqS703EA0hPSLK1TAgx81sv43RHUPgYvnA2d0WnJvtioX-M90SOvVQrp_20PfYnN8YocwiDfZ",
+            src:img6,
+            // src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBi5XFHMLpFKeecUw2kFZP1U7lM5KbflmO17Nm-6aMxFrOpa47JXpBtNtyUWG-8_xrXJMy8AeU4n-Ogrfl1iNRSSaYBQsFrVrGE08C61SUWgfL8MXAxOS1utWRhGHOTZfRuwJxRxKMT4KJuI6W5CEmR0B0B_mcGczAGMHCCM9EgR5mgDKrjLD59IiFxKmMZFl00GM9GqS703EA0hPSLK1TAgx81sv43RHUPgYvnA2d0WnJvtioX-M90SOvVQrp_20PfYnN8YocwiDfZ",
             title: "Premium Equipment",
             category: "Equipment"
         },
         {
             id: 7,
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAuBcmNoJ-MwA51zssvqEBchGjxJXYiSP7t6-m8WXe1VyIhLMTnY9AIIHnL4Gxu3Ca39roIOhCh-p7T3OufLfZy1GJIhLETmqQIrvvPPaJBDhQVGlVuQo9HeLYR9XbQEAc49tgQoY4gWJg7iXbCa8j0V8-h78quBqNxxsc6H4RRa4vfQg6HNgLb2_gkAL5Ub4ul5r5bjgRh5aREEpOPt7ScIebU_rC03N57vGkcPtB6YGHuaT1fGwNNpxF3wZ3dHnt7jhk2vxfMRwkb",
+            src:img1,
+            // src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAuBcmNoJ-MwA51zssvqEBchGjxJXYiSP7t6-m8WXe1VyIhLMTnY9AIIHnL4Gxu3Ca39roIOhCh-p7T3OufLfZy1GJIhLETmqQIrvvPPaJBDhQVGlVuQo9HeLYR9XbQEAc49tgQoY4gWJg7iXbCa8j0V8-h78quBqNxxsc6H4RRa4vfQg6HNgLb2_gkAL5Ub4ul5r5bjgRh5aREEpOPt7ScIebU_rC03N57vGkcPtB6YGHuaT1fGwNNpxF3wZ3dHnt7jhk2vxfMRwkb",
             title: "Club Atmosphere",
             category: "Atmosphere"
         },
         {
             id: 8,
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBniC9RyfauBn1ofO2m3nI40zrbMCvNKjeNCUjCrkK7mzhqFgJYj_xGd32U42xSyt0R_KWXo_pJ6wiq_vmOtYSoTXlQEpXUtsyEgOLv5_yBJqH0w53A7eAToeOBDUqmy9p9IKS20gYS2eWma6I5KxmY94KWPdiL-jwsg-8VpwOd18evolXPu-msSGY5coZGBKjw3xjIlqWAK7w9H3VKQxT2lOCZ78RwCUZTKUU9UcQrQSXIw3rBlF5SxsjvHOIHQJGHAvwGmpqUz4Mm",
+            src:img3,
+            // src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBniC9RyfauBn1ofO2m3nI40zrbMCvNKjeNCUjCrkK7mzhqFgJYj_xGd32U42xSyt0R_KWXo_pJ6wiq_vmOtYSoTXlQEpXUtsyEgOLv5_yBJqH0w53A7eAToeOBDUqmy9p9IKS20gYS2eWma6I5KxmY94KWPdiL-jwsg-8VpwOd18evolXPu-msSGY5coZGBKjw3xjIlqWAK7w9H3VKQxT2lOCZ78RwCUZTKUU9UcQrQSXIw3rBlF5SxsjvHOIHQJGHAvwGmpqUz4Mm",
             title: "Championship Tables",
             category: "Tables"
         },
         {
             id: 9,
-            src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSIqL5ukWBfO6oIy1XQU4hIsPgIoxASvwInxseMnhOR4l_AvrgZ7g8o7Eqj9tdRQ-qU9EwG8RhTZVOVF_om7zM3_aUy01JTTftwH6yml3-kpJ7WLB1yzkopTiK6HJGQ_VzyREnycuYyoCtb88kx78-pMeBWTVl_Dm70VwHbS32HPe06tVlMaX586sm6S2DrYgnQJyN4TEP07kfcbZZvCeTU5KIZARoUoIbUqJu8QZ1mIp3jVuhFQQcLU1Fauzs-ns3sZmNmwA2i8OD",
+            src:img2,
+            // src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSIqL5ukWBfO6oIy1XQU4hIsPgIoxASvwInxseMnhOR4l_AvrgZ7g8o7Eqj9tdRQ-qU9EwG8RhTZVOVF_om7zM3_aUy01JTTftwH6yml3-kpJ7WLB1yzkopTiK6HJGQ_VzyREnycuYyoCtb88kx78-pMeBWTVl_Dm70VwHbS32HPe06tVlMaX586sm6S2DrYgnQJyN4TEP07kfcbZZvCeTU5KIZARoUoIbUqJu8QZ1mIp3jVuhFQQcLU1Fauzs-ns3sZmNmwA2i8OD",
             title: "Tournament Action",
             category: "Events"
         }
@@ -100,7 +116,7 @@ export default function Gallery() {
             </section>
 
             {/* ================= CATEGORY FILTER ================= */}
-            <section className="bg-[#0d1b11] border-y border-[#28392e] py-6">
+            <section className="bg-black border-y border-[#28392e] py-6">
                 <div className="max-w-[1280px] mx-auto px-4 md:px-10">
                     <div className="flex flex-wrap gap-3 justify-center">
                         {categories.map((category) => (
