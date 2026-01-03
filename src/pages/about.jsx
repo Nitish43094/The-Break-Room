@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import teamImg1 from '../assets/teamImage1.jpeg'
 import teamImg2 from '../assets/mohit-manik.jpeg'
 import teamImg3 from '../assets/aman-kumar.jpeg'
+import suraj from '../assets/suraj.jpg'
+import aditya from '../assets/Aditya-sinha.jpeg'
+import vishal from '../assets/Vishal-sinha.jpeg'
 import { useNavigate } from "react-router-dom";
 import Counter from "../components/Counter";
 const About = () => {
@@ -226,7 +229,7 @@ const About = () => {
                             </div>
                             <div>
                                 <div className="font-bold text-sm">Aditya Sinha</div>
-                                <div className="text-xs text-gray-500">Management</div>
+                                {/* <div className="text-xs text-gray-500">Management</div> */}
                             </div>
                         </div>
 
@@ -241,10 +244,51 @@ const About = () => {
                             </div>
                             <div>
                                 <div className="font-bold text-sm">Shubham Manik</div>
-                                <div className="text-xs text-gray-500">Management</div>
+                                {/* <div className="text-xs text-gray-500">Management</div> */}
                             </div>
                         </div>
-
+                        {/* Team Member 5 */}
+                        <div className="p-6 rounded-xl bg-white dark:bg-[#152319] shadow-sm flex flex-col gap-4">
+                            <div className="w-full aspect-square rounded-xl overflow-hidden bg-gray-200">
+                                <img
+                                    src={suraj}
+                                    alt="SN"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <div>
+                                <div className="font-bold text-sm">Suraj Nag</div>
+                                {/* <div className="text-xs text-gray-500">Management</div> */}
+                            </div>
+                        </div>
+                        {/* Team Member 4 */}
+                        <div className="p-6 rounded-xl bg-white dark:bg-[#152319] shadow-sm flex flex-col gap-4">
+                            <div className="w-full aspect-square rounded-xl overflow-hidden bg-gray-200">
+                                <img
+                                    src={aditya}
+                                    alt="AS"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <div>
+                                <div className="font-bold text-sm">Aditya Sinha</div>
+                                {/* <div className="text-xs text-gray-500">Management</div> */}
+                            </div>
+                        </div>
+                        {/* Team Member 4 */}
+                        <div className="p-6 rounded-xl bg-white dark:bg-[#152319] shadow-sm flex flex-col gap-4">
+                            <div className="w-full aspect-square rounded-xl overflow-hidden bg-gray-200">
+                                <img
+                                    src={vishal}
+                                    alt="AS"
+                                    className="w-full h-full  hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <div>
+                                <div className="font-bold text-sm">Vishal Sinha</div>
+                                {/* <div className="text-xs text-gray-500">Management</div> */}
+                            </div>
+                        </div>
                     </div>
                 </div>
 
